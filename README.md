@@ -2,13 +2,11 @@
 
 ## Vue+vant+axios+NODE.JS+KOA2+Mongoose+Mongodb 
 
-17
-18
 
-|-- node_modules             //依赖包
-|
-|-- public                   //公共
-|
+|-- node_modules             //依赖包 <br>  
+|<br>  
+|-- public                   //公共<br>  
+|<br>  
 |-- scr                      //source源码
 |   |--assets                //引入外部资源
 |   |--components            //VUE公共组件

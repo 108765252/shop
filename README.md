@@ -1,24 +1,5 @@
 # shop
 
-## Project setup
-```
-npm install
-```
+## Vue+vant+axios+NODE.JS+KOA2+Mongoose+Mongodb 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 农机商城

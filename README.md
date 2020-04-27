@@ -1,6 +1,6 @@
 # 农机商城 - Shop
 
-## Vue+vant+axios+NODE.JS+KOA2+Mongoose+Mongodb 
+## 技术栈 Vue+vant+axios+NODE.JS+KOA2+Mongoose+Mongodb 
 
 
 |-- node_modules             //依赖包 <br>  

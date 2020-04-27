@@ -3,10 +3,10 @@
 ## 技术栈 Vue+vant+axios+NODE.JS+KOA2+Mongoose+Mongodb 
 
 
-|-- node_modules             //依赖包 <br>  
-|<br>  
-|-- public                   //公共<br>  
-|<br>  
+        |-- node_modules             //依赖包 
+        |
+        |-- public                   //公共
+|
 |-- scr                      //source源码
 |   |--assets                //引入外部资源
 |   |--components            //VUE公共组件

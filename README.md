@@ -9,10 +9,16 @@
         |
         |-- scr                      //source源码
         |   |--assets                //引入外部资源
+        |   |  |--css
+        |   |  |  |--reset.css       //css样式模板
+        |   |  |--js
+        |   |  |  |--rem.js          //js样式模板
         |   |--components            //VUE公共组件
         |   |--router                //VUE页面路由
+        |      |--index.js           //路由配置文件
         |   |--store                 //VUE状态管理
         |   |--views                 //VUE视图界面
+        |      |--Home.vue           //界面配置文件
         |   |--.APP.vue              // 页面入口文件
         |   |--.main.js              //程序入口文件，加载各公共组件
         |

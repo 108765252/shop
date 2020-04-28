@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div> // 这个是用来动态显示input标签里面的value值的
+    <input type="text" id="inp" /> // 通过监听input标签的value值，赋值给我们监听的对象属性
+    
+</body>
+
+<script>
+   let Obj = {} => ;// 监听对象
+    let demo = document.getElementById('demo') // 获取DOM
+    let inp = document.getElementById('inp') // 获取DOM
+    Object.defineProperty(Obj, 'text', {
+        configurable: true,
+        enumerable: true,
+        set: function (val) {
+            // 将Obj对象新改变的值赋值给input的value，然后页赋值给demo
+            inp.value = val
+            demo.innerHTML = val
+            console.log('input里面输入了' + val)
+        },
+        get: function () {
+            // 返回对象
+            return Obj
+        }
+    })
+
+</script>

@@ -1,7 +1,10 @@
 <template>
   <div id="app">
+    <!-- 页面路由切换 -->
     <router-view></router-view>
+    <!-- 底部组件 -->
 <van-tabbar>
+  <!-- to 路由跳转 -->
   <van-tabbar-item icon="wap-home-o" to="/">首页</van-tabbar-item>
   <van-tabbar-item icon="records" to="/Category">分类</van-tabbar-item>
   <van-tabbar-item icon="shopping-cart-o" to="/Cart">购物车</van-tabbar-item>
@@ -26,17 +29,17 @@
 </template>
 
 <style lang="scss">
-.footer-bar {
-  display: flex;
-  background: #eeeeee;
-  position: fixed;
-  width: 100%;
-  height: 1rem;
-  line-height: 1rem;
-  bottom: 0;
-  &-item {
-    flex-grow: 1;
-    text-align: center;
-  }
-}
+// .footer-bar {
+//   display: flex;
+//   background: #eeeeee;
+//   position: fixed;
+//   width: 100%;
+//   height: 1rem;
+//   line-height: 1rem;
+//   bottom: 0;
+//   &-item {
+//     flex-grow: 1;
+//     text-align: center;
+//   }
+// }
 </style>

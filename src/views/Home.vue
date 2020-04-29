@@ -8,7 +8,7 @@
 
 <!--轮播图-->
 <div class="carousel">
-<van-swipe :autoplay="3000">
+<van-swipe :autoplay="6000">
   <van-swipe-item class="carousel-item" v-for="(item,index) in carouselItem" :key="index">
  <img :src="item.imgSrc" alt="">
   </van-swipe-item>
@@ -36,7 +36,7 @@ data(){
             },
              {
                 name:'img3',
-                imgSrc:'http://linyi.dzwww.com/focus/202004/W020200406281461395731.jpg'
+                imgSrc:'https://img2.nongji360.com/a/adv/2020/04/09144323735812.png'
             }
 
         ]
@@ -49,11 +49,13 @@ data(){
 </script>
 
 <style lang="scss">
- .my-swipe .van-swipe-item {
-    color: #fff;
-    font-size: 20px;
-    line-height: 150px;
-    text-align: center;
-    background-color: #39a9ed;
+ .carousel {
+   height: 3rem;
+   &-item{
+     img{
+       width: 100rem;
+       height: 3rem;
+     }
+   }
   }
 </style>

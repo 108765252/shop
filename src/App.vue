@@ -3,7 +3,7 @@
     <!-- 页面路由切换 -->
     <router-view></router-view>
     <!-- 底部组件 -->
-<van-tabbar>
+<van-tabbar v-model="active">
   <!-- to 路由跳转 -->
   <van-tabbar-item icon="wap-home-o" to="/">首页</van-tabbar-item>
   <van-tabbar-item icon="records" to="/Category">分类</van-tabbar-item>
@@ -27,6 +27,16 @@
     </ul> -->
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      active: 0,
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 // .footer-bar {

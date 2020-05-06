@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Category from '../views/Category.vue'
 import Cart from '../views/Cart.vue'
 import Profile from '../views/Profile.vue'
+import Ajax from '../views/Ajax.vue'
+import Vbase from '../views/Vbase.vue'
 
 Vue.use(VueRouter)
 
@@ -26,6 +28,14 @@ Vue.use(VueRouter)
     path: '/Profile',
     name: 'Profile',
     component: Profile
+  },{
+    path: '/ajax',
+    name: 'ajax',
+    component: Ajax
+  },{
+    path: '/vbase',
+    name: 'vbase',
+    component: Vbase
   }
 
 ]

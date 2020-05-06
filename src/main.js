@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
 
@@ -12,8 +13,8 @@ import '@/assets/js/rem.js'
 // Vue.use(Vant);
 
 // 按需引入Vant
-import {Button,Icon,NavBar,Tabbar,TabbarItem,Swipe,SwipeItem } from 'vant';
-Vue.use(Swipe).use(SwipeItem).use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem);
+import {Lazyload,Button,Icon,NavBar,Tabbar,TabbarItem,Swipe,SwipeItem } from 'vant';
+Vue.use(Lazyload ).use(Swipe).use(SwipeItem).use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem);
 
 Vue.config.productionTip = false
 

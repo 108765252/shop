@@ -38,6 +38,7 @@ export default {
         //通过调用上面的open()参数指定发送一个 HTTP 请求
         xmlhttp.send();
       
+      //等待响应，判断状态码
       xmlhttp.addEventListener("readystatechange", () => {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
           let obj = JSON.parse(xmlhttp.responseText);

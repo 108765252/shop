@@ -46,6 +46,8 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+// eslint-disable-next-line no-unused-vars
+import  axios from "axios";
 
 export default {
   // data数据返回数组
@@ -532,7 +534,15 @@ export default {
     Swiper,
     // eslint-disable-next-line vue/no-unused-components
     SwiperSlide
-  }
+  },
+  created(){
+    // eslint-disable-next-line no-unused-vars
+    // get请求头部信息，表单提交post请求体body信息
+    axios.get('https://douban.uieee.com/v2/movie/top250?start=0&count=15').then(res=>{
+      console.log(res);
+    }); 
+
+    }
 };
 </script>
 

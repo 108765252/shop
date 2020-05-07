@@ -6,6 +6,7 @@ import store from './store'
 
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
+import '@/mock/mock.js'
 
 // 全部引入Vant
 // import Vant from 'vant';

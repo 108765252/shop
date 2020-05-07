@@ -538,9 +538,20 @@ export default {
   created(){
     // eslint-disable-next-line no-unused-vars
     // get请求头部信息，表单提交post请求体body信息
-    axios.get('https://douban.uieee.com/v2/movie/top250?start=0&count=15').then(res=>{
-      console.log(res);
-    }); 
+    // axios.get('https://douban.uieee.com/v2/movie/top250?start=0&count=15').then(res=>{
+    //   console.log(res);
+    // }); 
+
+    // eslint-disable-next-line no-unused-vars
+    let url1 = 'http://www.weichuang.com/getList';
+    // eslint-disable-next-line no-unused-vars
+    let url2 = 'http://www.weichuang.com/getUser';
+    // eslint-disable-next-line no-unused-vars
+    let url3 = 'http://www.weichuang.com/regexp';
+    let url4 = 'http://www.weichuang.com/list';
+    axios.get(url4).then(res =>{
+console.log(res)
+    });
 
     }
 };

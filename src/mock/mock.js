@@ -25,4 +25,22 @@ Mock.mock('http://www.weichuang.com/list',{
             'text': '@sentence(6,22)'
         }
     ]
-})
+});
+
+// eslint-disable-next-line no-unused-vars
+let Random = Mock.Random;
+// eslint-disable-next-line no-unused-vars
+let productData = req => {
+let productList = []; //定义农机信息空数组
+for(let i=0; i<100; i++){
+    let product = {
+        name: Random.ctitle(5,20),
+        img: Random.dataImage('100x100', '农机' + Random.integer(1,100)),
+        price: Random.integer(1000,10000),
+        owner: Random.cname()
+    };
+    productList.push(product); //向空数组推送数据
+}
+return productList; //返回数据
+};
+Mock.mock('http://www.weichuang.com/getVarietyItem',productData);

@@ -554,7 +554,8 @@ export default {
     // eslint-disable-next-line no-unused-vars
     let url4 = 'http://www.weichuang.com/list';
     // eslint-disable-next-line no-unused-vars
-    let url5 = 'http://www.weichuang.com/getVarietyItem';
+    // eslint-disable-next-line no-undef
+    let url5 = url.getVarietyItem; //'http://www.weichuang.com/getVarietyItem'
 
     axios.get(url5).then(res =>{
 console.log(res)

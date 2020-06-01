@@ -14,8 +14,8 @@ import '@/mock/mock.js'
 // Vue.use(Vant);
 
 // 按需引入Vant
-import {Cell, CellGroup,Field,Tab,Tabs,Lazyload,Button,Icon,NavBar,Tabbar,TabbarItem,Swipe,SwipeItem } from 'vant';
-Vue.use(Cell).use(CellGroup).use(Field).use(Tab).use(Tabs).use(Lazyload).use(Swipe).use(SwipeItem).use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem);
+import {Toast,Cell, CellGroup,Field,Tab,Tabs,Lazyload,Button,Icon,NavBar,Tabbar,TabbarItem,Swipe,SwipeItem } from 'vant';
+Vue.use(Toast).use(Cell).use(CellGroup).use(Field).use(Tab).use(Tabs).use(Lazyload).use(Swipe).use(SwipeItem).use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem);
 
 Vue.config.productionTip = false
 
